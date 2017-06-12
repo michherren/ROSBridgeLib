@@ -36,6 +36,10 @@ namespace ROSBridgeLib {
 			public byte[] GetImage() {
 				return _data;
 			}
+
+			public HeaderMsg GetHeader() {
+				return _header;
+			}
 			
 			public static string GetMessageType() {
 				return "sensor_msgs/CompressedImage";
